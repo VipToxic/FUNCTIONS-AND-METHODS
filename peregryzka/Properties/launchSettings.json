@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "peregryzka": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
