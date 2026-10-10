@@ -2,4 +2,5 @@
   <Project Path="FUNCTIONS AND METHODS/FUNCTIONS AND METHODS.csproj" />
   <Project Path="lessons_`/lessons_`.csproj" />
   <Project Path="peregryzka/peregryzka.csproj" Id="0d0cc4f5-c713-4a64-aabf-da590572f9a6" />
+  <Project Path="Scope/Scope.csproj" Id="c0608bdc-cea8-48e1-8e3b-5de9f06abaeb" />
 </Solution>
