@@ -3,35 +3,42 @@
     internal class Program
     {
 
-
-
-        // Стек и куча
-        // ссылочные и значимые типы данных
-
-
-        // Параметры
-
-        static void Main(string[] args)
+        /// <summary>
+        /// Метод приветсвует пользователя
+        /// </summary>
+        /// <param name="hello"></param>
+        /// <param name="name"></param>
+        static void SayHello(string hello = "Привет", string name = "Человек")
         {
 
-            SayHello();
+            // string.IsNullOrWhiteSpace(name) Оно проверяет не является ли name == null
+            // Если да то к нему присваиваться значение Пользователь
+            if (string.IsNullOrWhiteSpace(name)) { name = "Пользователь"; }
 
-            void SayHello()
+            if (string.IsNullOrWhiteSpace(hello)) { hello = "Привет"; }
+
+            Console.WriteLine(hello + " " + name + "...");
+        }
+        static void Main(string[] args)
+        {
+           
+
+            try
             {
-                Console.WriteLine("Hello");
+                Console.Write("Напиши имя: ");
+                string name = Console.ReadLine();
+                Console.Write("Напиши Приветствие: ");
+                string hello1 = Console.ReadLine();
+
+                SayHello(hello1, name);
             }
-
-            SayHello();
-
-
-            void PrintMessage(string message)
+            catch (Exception ex)
             {
-                Console.WriteLine(message);
+                Console.WriteLine("Ошибка: " + ex);
             }
+            
 
-            PrintMessage("Привет");
-
-            //
+          
         }
     }
 }
