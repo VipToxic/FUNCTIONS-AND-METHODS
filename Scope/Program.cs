@@ -26,18 +26,10 @@
                 "Ноябрь", "Декабрь",
             };
 
-            // Массив номера месяца
-            int[] number =
-            {
-                1, 2, 3, 4,
-                5, 6, 7, 8,
-                9, 10, 11, 12
-            };
-
             // Перебор массива
-            for (int i = 0; i < number.Length; i++)
+            for (int i = 0; i < nameMonth.Length; i++)
             {
-                if (number[i] == month)
+                if ((i + 1) == month)
                 {
                     nameMonthPerson = nameMonth[i];
                     break;
@@ -73,6 +65,11 @@
             else
             {
                age = today.Year - year; 
+
+                if (today.Month < month || today.Month == month && today.Day < day)
+                {
+                    age--;
+                }
             }
 
             Console.WriteLine($"Привет {name}!");
