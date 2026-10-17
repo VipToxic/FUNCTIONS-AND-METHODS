@@ -2,9 +2,6 @@
 {
     internal class Program
     {
-
-
-
         /// <summary>
         /// Метод чтобы конвертировать месяц рождение
         /// </summary>
@@ -47,9 +44,18 @@
         /// <param name="name"></param>
         static void SayHello(string name = "Пользователь", int year = 0, int month = 0, int day = 0)
         {
+
             // Тут мы храним текущую дату
             DateTime today = DateTime.Today;
             int age = 0;
+
+            // Проверяем коректность данных
+            if (month > 12 || year > today.Year || day > 31)
+            {
+                Console.WriteLine("Неправильные данные...");
+                return;
+            }
+
 
             // string.IsNullOrWhiteSpace(name) Оно проверяет не является ли name == null (или же пробел)
             // Если да то к нему присваиваться значение Пользователь
@@ -78,8 +84,6 @@
         }
         static void Main(string[] args)
         {
-           
-
             try
             {
                 // Получаем данные

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "stackandkucha": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

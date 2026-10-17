@@ -3,4 +3,5 @@
   <Project Path="lessons_`/lessons_`.csproj" />
   <Project Path="peregryzka/peregryzka.csproj" Id="0d0cc4f5-c713-4a64-aabf-da590572f9a6" />
   <Project Path="Scope/Scope.csproj" Id="c0608bdc-cea8-48e1-8e3b-5de9f06abaeb" />
+  <Project Path="stackandkucha/stackandkucha.csproj" Id="bcc61c5b-85c8-4cdd-ac1c-1fd536c815b3" />
 </Solution>
